@@ -86,7 +86,7 @@ var GtfsEditor = GtfsEditor || {};
         tileKey = G.config.mapboxKey;
 
 
-      var url = 'http://{s}.tiles.mapbox.com/v3/' + tileKey + '/{z}/{x}/{y}.png',
+      var url = 'http://a.tile2.opencyclemap.org/transport/{z}/{x}/{y}.png',
           baseLayer = L.tileLayer(url, {
             attribution: '&copy; OpenStreetMap contributors, CC-BY-SA. <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
           });
