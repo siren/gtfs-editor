@@ -13,4 +13,6 @@ ADD . /opt/gtfs-editor
 RUN sed s/application.mode=dev/application.mode=prod/g conf/application.conf.template > conf/application.conf && \
     /opt/play-1.2.5/play dependencies --forProd
 EXPOSE 9000
+VOLUME /opt/gtfs-editor/data
+ENV _JAVA_OPTIONS "-Xms256m -Xmx256m"
 CMD ["/opt/play-1.2.5/play","run"]
