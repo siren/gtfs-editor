@@ -1,7 +1,6 @@
 FROM openjdk:7-jdk-alpine
-RUN mkdir /opt/ && \
+RUN mkdir -p /opt/gtfs-editor/public/data && \
     cd /opt/ && \
-    mkdir /opt/gtfs-editor && \
     apk add --update --no-cache python && \
     wget http://downloads.typesafe.com/releases/play-1.2.5.zip && \
     jar xf play-1.2.5.zip && \
